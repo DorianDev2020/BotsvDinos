@@ -6,85 +6,34 @@ using System.Threading.Tasks;
 
 namespace DinosVsBots
 {
-    class Bots 
+    public class RoBot
     {//Member Variables
 
-        string Bot1Name;
-        string Bot2Name;
-        string Bot3Name;
-        string Bot4Name;
-        
+        string Botname;
         bool HasHealth;
-        bool HasMana;
+        bool HasEnergy;
+        int BotHP;
+        int BotEnergy;
+        double BotMana;
 
-        int TrooperHP;
-        int AssaultHP;
-        int ReconHP;
-        int HeavyHP;
-
-        Double TrooperMana;
-        Double AssaultMana;
-        Double ReconMana;
-        Double HeavyMana;
-
-        public Bots() //Constructor
+                                         //Constructor
+        public RoBot(string BotName, int BotHp, double BotEnergy, bool HasHealth, bool HasEnergy) 
         {
-            Bot1Name = ("Striker");
-            Bot2Name = ("Shocker");
-            Bot3Name = ("Zero");
-            Bot4Name = ("Berserker");
-
-            TrooperHP = (200);
-            AssaultHP = (300);
-            ReconHP = (250);
-            HeavyHP = (325);
-
-            TrooperMana = (300);
-            AssaultMana = (275);
-            ReconMana = (200);
-            HeavyMana = (150);
-
+                 //Why do these name have to be different from the method signiture?
+            BotName = "Name"; 
+            BotHp = (0);
+            BotEnergy = (0);
             HasHealth = true;
-            HasMana = true;
+            HasEnergy = true;
         }
-
-        public void ChooseYourBot()//Methods
+        public void ChooseAttack()
         {
-            string Bot1name(int TrooperHP, int TrooperMana);
-            HasMana = true;
-            HasHealth = true;
-            Console.WriteLine("Striker!");
-            Bot1Name = (Console.ReadLine());
-
            
-            string Bot2name(int AssaultHP, int AssaultMana);
-            Console.WriteLine("Shocker!");
-            Bot2Name = (Console.ReadLine());
-            HasMana = true;
-            HasHealth = true;
-
-
-            string Bot3name(int ReconHP, int ReconMana);
-            Console.WriteLine("Zero!");
-            Bot3Name = (Console.ReadLine());
-            HasHealth = true;
-            HasMana = true;
-
-
-            
-            string Bot4name(int HeavyHP, int HeavyMana);
-            Console.WriteLine("Berzerker!");
-            Bot4Name = (Console.ReadLine());
-            HasMana = true;
-            HasHealth = true;
-
-
         }
-        
-        
-        
-        
-        
-        
+                            //Instantiation
+        RoBot Assault = new RoBot("Striker", 200, 300, true, true);
+        RoBot Shock = new RoBot("Shocker", 250, 250, true, true);
+        RoBot Recon = new RoBot("Shadow", 150, 200, true, true);
+        RoBot Wrecker = new RoBot("Barricade", 350, 150, true, true);  
     }
 }
