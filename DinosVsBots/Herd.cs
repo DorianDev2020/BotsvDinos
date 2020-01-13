@@ -23,6 +23,28 @@ namespace DinosVsBots
             Dinobots.Add(new Dinos("Indominous Wrecks", 300, 100, 100, "Vicious Bite"));
         }
 
+        public void StatusSyncforDinos()
+        {
+
+            for (int i = 0; i < Dinobots.Count; i++)
+            {
+                if (Dinobots[i].DinoHP <= 0)
+                {
+                    Dinobots.Remove(Dinobots[i]);
+                    i--;
+                    Console.WriteLine("Your Dino Has Been Defeated");
+                }
+                
+
+
+            }
+
+            if (Dinobots.Count == 0)
+            {
+                DeadDinoBot = true;
+            }
+
+        }
 
     }
 }

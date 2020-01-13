@@ -22,7 +22,16 @@ namespace DinosVsBots
             this.DinoEnergy = (0);
             this.Attackpower = (75);
             this.weapons = new Weapons("Bite");
-        }                              
+        }         
+        
+
+        public void AttackMethod(RoBot roBot)
+        {
+            roBot.BotHP -= Attackpower + weapons.WeaponDamage;
+
+        }
+
+        
         
     }
                                                            

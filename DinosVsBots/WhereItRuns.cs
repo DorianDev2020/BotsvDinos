@@ -10,7 +10,9 @@ namespace DinosVsBots
     {
         static void Main(string[] args)
         {
-            
+            Battlefield Wakanda = new Battlefield();
+         
+            Console.ReadLine();
 
         }
     }

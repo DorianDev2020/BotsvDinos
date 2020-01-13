@@ -30,6 +30,12 @@ namespace DinosVsBots
             //DO NOT INSTANTIATE THE OBJECT IN ITS SAME CLASS! this will cause a stack overload (or an infinite loop basically).
 
         }
+
+        public void battleplan(Dinos dinos)
+        {
+
+            dinos.DinoHP -= AttackPower + weapons.WeaponDamage;
+        }
         
     }
 }
