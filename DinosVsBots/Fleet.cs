@@ -6,7 +6,40 @@ using System.Threading.Tasks;
 
 namespace DinosVsBots
 {
-    class Fleet
-    {
+    public class Fleet
+    {//list of "RoBot objects"
+        
+        
+        public void RoBot()
+        {
+            RoBot battlebot001 = new RoBot("BB001", 200, 300, 25);
+            RoBot battlebot002 = new RoBot("BB002", 250, 350, 45);
+            RoBot battlebot003 = new RoBot("BB003", 300, 200, 50);
+            Console.WriteLine("Choose Your Bot");  
+            Console.ReadLine();
+        }
+
+
+
+        
+
+       
+        
+
+           
+        
+
+
+
+
     }
+
+
+   
+
+
+
+    
+
+    
 }

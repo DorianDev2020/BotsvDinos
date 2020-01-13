@@ -6,59 +6,26 @@ using System.Threading.Tasks;
 
 namespace DinosVsBots
 {
-    public class Weapons //Member Variables
+    public class Weapons
     {
-        string ChooseWeapon;
+        public string WeaponName;
+        public int WeaponDamage;
+       
 
-        string M4;
-        string Name1;
-
-        string ShotGun;
-        string Name2;
-
-        string Sniper;
-        string Name3;
-
-        string Rocketlaunch;
-        string Name4;
-
-        int Weapon1Damage;
-        int Weapon2Damage;
-        int Weapon3Damage;
-        int Weapon4Damage;
-
-        public Weapons() //Constructor
+        public Weapons(string WeaponName)
         {
-            Name1 = M4;
-            Name2 = ShotGun;
-            Name3 = Sniper;
-            Name4 = Rocketlaunch;
-            Weapon1Damage = 20;
-            Weapon2Damage = 35;
-            Weapon3Damage = 75;
-            Weapon4Damage = 100;
+            this.WeaponName = WeaponName;
+            WeaponDamage = 50;
         }
-        //Methods
-        public void Trooper()
-        {
-            
-        }
+        // "This" basically ties the variable to THAT specific parameter
+        // Wheres as not putting "This" leaves it more fluid.
+        
 
-        public void Assault()
-        {
-
-        }
-
-        public void Recon()
-        {
-
-        }
-
-        public void Heavy()
-        {
-
-        }
-
+        
+        
+        
+        
     }
+
 
 }
