@@ -7,32 +7,28 @@ using System.Threading.Tasks;
 namespace DinosVsBots
 {
     public class Fleet
-    {//list of "RoBot objects"
-        
-        
-        public void RoBot()
+    {
+
+       public RoBot BB001 = new RoBot("BB001", 400, 300, 50);
+       public RoBot BB002 = new RoBot("BB002", 500, 250, 75);
+       public RoBot BB003 = new RoBot("BB003", 450, 200, 100);
+       public List<RoBot> ROBOS;
+
+
+        //Constructor
+        public Fleet()
         {
-            RoBot battlebot001 = new RoBot("BB001", 200, 300, 25);
-            RoBot battlebot002 = new RoBot("BB002", 250, 350, 45);
-            RoBot battlebot003 = new RoBot("BB003", 300, 200, 50);
-            Console.WriteLine("Choose Your Bot");  
-            Console.ReadLine();
+            ROBOS = new List<RoBot>();
+            ROBOS.Add(new RoBot("BB001", 200, 150, 20));
+            ROBOS.Add(new RoBot("BB002", 250, 200, 25));
+            ROBOS.Add(new RoBot("BB003", 300, 100, 75));
+
+
+
         }
-
-
-
-        
-
-       
-        
-
-           
-        
-
-
-
-
     }
+
+    
 
 
    

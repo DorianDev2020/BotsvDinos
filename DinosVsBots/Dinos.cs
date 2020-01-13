@@ -13,11 +13,11 @@ namespace DinosVsBots
         public int DinoHP;
         public int DinoEnergy;
         public int Attackpower;
-
         public Weapons weapons;
+
         public Dinos(string Dinoname, int DinoHP, int DinoEnergy, int Attackpower, string DinoWeaponName)
         {
-            this.Dinoname = "Name";
+            this.Dinoname = null;
             this.DinoHP = (0);
             this.DinoEnergy = (0);
             this.Attackpower = (75);
